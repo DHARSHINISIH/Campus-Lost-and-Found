@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+}
+
+/* 🔥 Animated Gradient Background */
+.home-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  color: white;
+  background: linear-gradient(45deg, #6a00ff, #2700b0, #0050ff, #00b9ff);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0 0; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0 0; }
+}
+
+/* 🔷 Modern Navigation Bar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: rgba(20, 0, 50, 0.3);
+  backdrop-filter: blur(12px);
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #ffebfb;
+  border-bottom: 2px solid #fff;
+}
+
+/* Glassmorphism Buttons */
+.login-btn a,
+.signup-btn a {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 2px solid #ffffff80;
+  color: white;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+
+.login-btn a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.signup-btn a {
+  background: #ffffff;
+  color: #4a00e0;
+  font-weight: 600;
+}
+
+.signup-btn a:hover {
+  background: #e5e5ff;
+}
+
+/* Button */
+.get-started-btn {
+  margin-top: 20px;
+  background: white;
+  color: #5100ff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.get-started-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+.features-section,
+.contact-section {
+  padding: 80px 12%;
+}
+
+.features-section {
+  background: #f6f0ff;
+  color: #222;
+}
+
+.features-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
